@@ -385,7 +385,7 @@ Norwegian regulations for medication management (Forskrift om legemiddelhåndter
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8665fb74bc442044abaec551b25dd5b1">
+		["MD5-CAM-1.0.1"] = <"fe7f1619bdc9ce74a630e2551df1c1db">
 		["build_uid"] = <"d759dc1c-2029-4663-a29e-065a87bfe41d">
 		["revision"] = <"1.2.0">
 	>
@@ -437,6 +437,22 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::at0158]    -- text_2
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0159] matches {    -- text_3
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::524]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0159]    -- text_3
 						}
 					}
 				}
@@ -721,6 +737,10 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 					text = <"*text_2 (en)">
 					description = <"">
 				>
+				["at0159"] = <
+					text = <"*text_3 (en)">
+					description = <"">
+				>
 			>
 		>
 		["sl"] = <
@@ -870,6 +890,10 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 				>
 				["at0158"] = <
 					text = <"*text_2 (en)">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"*text_3 (en)">
 					description = <"">
 				>
 			>
@@ -1023,6 +1047,10 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 					text = <"*text_2 (en)">
 					description = <"">
 				>
+				["at0159"] = <
+					text = <"*text_3 (en)">
+					description = <"">
+				>
 			>
 		>
 		["ru"] = <
@@ -1172,6 +1200,10 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 				>
 				["at0158"] = <
 					text = <"*text_2 (en)">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"*text_3 (en)">
 					description = <"">
 				>
 			>
@@ -1326,6 +1358,10 @@ Coding of the body site with a terminology is preferred, where possible.">
 					text = <"text_2">
 					description = <"Descripció_text_2">
 				>
+				["at0159"] = <
+					text = <"text_3">
+					description = <"descripció_text_3">
+				>
 			>
 		>
 		["nb"] = <
@@ -1479,6 +1515,10 @@ Dersom bare denne arketypen blir brukt for å dokumentere legemiddeladministerin
 					text = <"*text_2 (en)">
 					description = <"">
 				>
+				["at0159"] = <
+					text = <"*text_3 (en)">
+					description = <"">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -1627,6 +1667,10 @@ Alguna cosa més (en)">
 				>
 				["at0158"] = <
 					text = <"*text_2 (en)">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"*text_3 (en)">
 					description = <"">
 				>
 			>
@@ -1778,6 +1822,10 @@ Es wird dringend empfohlen, dass das Element \"Arzneimittel\" mit einer Terminol
 				>
 				["at0158"] = <
 					text = <"*text_2 (en)">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"*text_3 (en)">
 					description = <"">
 				>
 			>
@@ -1936,6 +1984,10 @@ Det rekommenderas starkt att ”Läkemedelsartikeln” är kodad med en terminol
 					text = <"*text_2 (en)">
 					description = <"">
 				>
+				["at0159"] = <
+					text = <"*text_3 (en)">
+					description = <"">
+				>
 			>
 		>
 		["zh-cn"] = <
@@ -2086,6 +2138,10 @@ Alguna cosa més (en)">
 				>
 				["at0158"] = <
 					text = <"*text_2 (en)">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"*text_3 (en)">
 					description = <"">
 				>
 			>
