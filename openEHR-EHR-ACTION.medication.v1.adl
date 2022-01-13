@@ -385,7 +385,7 @@ Norwegian regulations for medication management (Forskrift om legemiddelhåndter
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fadf782c87ffda5cf47bee491afa97f7">
+		["MD5-CAM-1.0.1"] = <"8665fb74bc442044abaec551b25dd5b1">
 		["build_uid"] = <"d759dc1c-2029-4663-a29e-065a87bfe41d">
 		["revision"] = <"1.2.0">
 	>
@@ -405,6 +405,38 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::at0007]    -- Medication course completed
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0157] matches {    -- text_1
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::524]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0157]    -- text_1
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0158] matches {    -- text_2
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::524]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0158]    -- text_2
 						}
 					}
 				}
@@ -681,6 +713,14 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 					description = <"*The clinical reason for the medication activity. (en)">
 					comment = <"*For example: 'Angina' or 'Pain'. Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. If only an ACTION is used to record a medication indication, this data element can be used without additional consideration. However, if a clinical indication is recorded for both the Medication order INSTRUCTION and this Medication management ACTION, be aware that these indications might not be consistent.\" (en)">
 				>
+				["at0157"] = <
+					text = <"*text_1 (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*text_2 (en)">
+					description = <"">
+				>
 			>
 		>
 		["sl"] = <
@@ -688,7 +728,7 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 				["at0000"] = <
 					text = <"*Medication management(en)">
 					description = <"*Any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item.
-Alguna cosa més. Aquesta edició s'ha fet amb GH (en)">
+Alguna cosa més (en)">
 					comment = <"*This is not limited to activities performed based on medication orders from clinicians, but could also include for example taking over the counter medication.(en)">
 				>
 				["at0007"] = <
@@ -823,6 +863,14 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 					text = <"*Clinical indication (en)">
 					description = <"*The clinical reason for the medication activity. (en)">
 					comment = <"*For example: 'Angina' or 'Pain'. Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. If only an ACTION is used to record a medication indication, this data element can be used without additional consideration. However, if a clinical indication is recorded for both the Medication order INSTRUCTION and this Medication management ACTION, be aware that these indications might not be consistent.\" (en)">
+				>
+				["at0157"] = <
+					text = <"*text_1 (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*text_2 (en)">
+					description = <"">
 				>
 			>
 		>
@@ -967,6 +1015,14 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 					description = <"*The clinical reason for the medication activity. (en)">
 					comment = <"*For example: 'Angina' or 'Pain'. Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. If only an ACTION is used to record a medication indication, this data element can be used without additional consideration. However, if a clinical indication is recorded for both the Medication order INSTRUCTION and this Medication management ACTION, be aware that these indications might not be consistent.\" (en)">
 				>
+				["at0157"] = <
+					text = <"*text_1 (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*text_2 (en)">
+					description = <"">
+				>
 			>
 		>
 		["ru"] = <
@@ -1109,6 +1165,14 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 					text = <"*Clinical indication (en)">
 					description = <"*The clinical reason for the medication activity. (en)">
 					comment = <"*For example: 'Angina' or 'Pain'. Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. If only an ACTION is used to record a medication indication, this data element can be used without additional consideration. However, if a clinical indication is recorded for both the Medication order INSTRUCTION and this Medication management ACTION, be aware that these indications might not be consistent.\" (en)">
+				>
+				["at0157"] = <
+					text = <"*text_1 (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*text_2 (en)">
+					description = <"">
 				>
 			>
 		>
@@ -1253,6 +1317,14 @@ Coding of the body site with a terminology is preferred, where possible.">
 					text = <"Clinical indication">
 					description = <"The clinical reason for the medication activity.">
 					comment = <"For example: 'Angina' or 'Pain'. Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. If only an ACTION is used to record a medication indication, this data element can be used without additional consideration. However, if a clinical indication is recorded for both the Medication order INSTRUCTION and this Medication management ACTION, be aware that these indications might not be consistent.\"">
+				>
+				["at0157"] = <
+					text = <"text_1">
+					description = <"descrip_txt_1">
+				>
+				["at0158"] = <
+					text = <"text_2">
+					description = <"Descripció_text_2">
 				>
 			>
 		>
@@ -1399,6 +1471,14 @@ Alguna cosa més (en)">
 Dersom bare denne arketypen blir brukt for å dokumentere legemiddeladministeringen, kan dette dataelementet brukes uten å tenke noe mer på det. Men dersom \"Klinisk indikasjon\" er registrert i både Legemiddelordinering (INSTRUCTION.medication_order) og denne Legemiddelhåndtering (ACTION.medication), må man være oppmerksom på at det kan være forskjell i registrert indikasjonen.
 ">
 				>
+				["at0157"] = <
+					text = <"*text_1 (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*text_2 (en)">
+					description = <"">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -1540,6 +1620,14 @@ Alguna cosa més (en)">
 					text = <"*Clinical indication (en)">
 					description = <"*The clinical reason for the medication activity. (en)">
 					comment = <"*For example: 'Angina' or 'Pain'. Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. If only an ACTION is used to record a medication indication, this data element can be used without additional consideration. However, if a clinical indication is recorded for both the Medication order INSTRUCTION and this Medication management ACTION, be aware that these indications might not be consistent.\" (en)">
+				>
+				["at0157"] = <
+					text = <"*text_1 (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*text_2 (en)">
+					description = <"">
 				>
 			>
 		>
@@ -1683,6 +1771,14 @@ Es wird dringend empfohlen, dass das Element \"Arzneimittel\" mit einer Terminol
 					text = <"Klinische Indikation">
 					description = <"Der klinische Grund für die Aktivität mit dem Arzneimittel.">
 					comment = <"Zum Beispiel: \"Angina\" oder \"Schmerz\". Die Codierung der Indikation mit einer Terminologie wird nach Möglichkeit bevorzugt. Dieses Datenelement ermöglicht mehrere Vorkommen. Wenn nur ein AKTION-Archetyp zur Aufzeichnung einer Medikamentenindikation verwendet wird, kann dieses Datenelement ohne zusätzliche Überlegungen verwendet werden. Wenn jedoch eine klinische Indikation sowohl im INSTRUCTION-Archetyp zur Verordnung von Arzneimittel als auch im AKTION-Archetyp zur Medikamentenanwendung aufgezeichnet wird, beachten Sie, dass diese Indikationen möglicherweise nicht konsistent sind.">
+				>
+				["at0157"] = <
+					text = <"*text_1 (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*text_2 (en)">
+					description = <"">
 				>
 			>
 		>
@@ -1832,6 +1928,14 @@ Det rekommenderas starkt att ”Läkemedelsartikeln” är kodad med en terminol
 					description = <"Den kliniska orsaken till läkemedelsaktiviteten.">
 					comment = <"Till exempel: 'Angina' eller 'Pain'. Kodning av indikationen med en terminologi rekommenderas. självklart där det går att hitta terminologibindning. Detta dataelement tillåter flera händelser. Om endast en ACTION används för att registrera en medicin indikation kan detta dataelement användas utan adderande hänsyn. Men om en klinisk indikation registreras för både INSTRUKTIONEN för läkemedelsbeställningen och ACTION för läkemedelshantering, var medveten om att dessa indikationer kanske inte är konsekventa. \"">
 				>
+				["at0157"] = <
+					text = <"*text_1 (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*text_2 (en)">
+					description = <"">
+				>
 			>
 		>
 		["zh-cn"] = <
@@ -1975,6 +2079,14 @@ Alguna cosa més (en)">
 					text = <"临床适应证">
 					description = <"用药活性的临床原因。">
 					comment = <"例如：“心绞痛”或“疼痛”。 最好尽可能采用术语集来编码适应证。此数据元允许多次重复出现。 如果仅仅利用行动（ACTION）来记录药物适应证，则可直接采用这一数据元，而无需做其他的考虑。不过，如果药物医嘱指令（INSTRUCTION）和当前药物管理行动（ACTION）同时都记录了临床适应证，则应当注意两处的适应证可能并不一致。">
+				>
+				["at0157"] = <
+					text = <"*text_1 (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*text_2 (en)">
+					description = <"">
 				>
 			>
 		>
