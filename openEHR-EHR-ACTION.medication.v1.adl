@@ -1213,7 +1213,7 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 				["at0000"] = <
 					text = <"Medication management">
 					description = <"Any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item.
-Alguna cosa més">
+Alguna cosa més. text entrat a GH">
 					comment = <"This is not limited to activities performed based on medication orders from clinicians, but could also include for example taking over the counter medication.">
 				>
 				["at0007"] = <
