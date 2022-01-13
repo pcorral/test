@@ -4,7 +4,7 @@ archetype (adl_version=1.4; uid=0033ab5c-cde0-4402-8b64-d30c188adf79)
 concept
 	[at0000]
 
-language		-- this is the language partaaaa
+language		
 	original_language = <[ISO_639-1::en]>
 	translations = <
 		["de"] = <
