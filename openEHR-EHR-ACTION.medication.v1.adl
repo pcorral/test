@@ -688,7 +688,7 @@ Coding of the body site with a terminology is preferred, where possible.(en)">
 				["at0000"] = <
 					text = <"*Medication management(en)">
 					description = <"*Any activity related to the planning, scheduling, prescription management, dispensing, administration, cessation and other use of a medication, vaccine, nutritional product or other therapeutic item.
-Alguna cosa més (en)">
+Alguna cosa més. Aquesta edició s'ha fet amb GH (en)">
 					comment = <"*This is not limited to activities performed based on medication orders from clinicians, but could also include for example taking over the counter medication.(en)">
 				>
 				["at0007"] = <
