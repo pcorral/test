@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "5f6636c0-9ed1-4b02-a4af-85d5bc5d21d6",
-      "MD5-CAM-1.0.1" : "7857453dd1726caad26d3133dfeeccb2",
+      "MD5-CAM-1.0.1" : "9a05bec79c4f0d53c2eaffacfb5ad735",
       "PARENT:MD5-CAM-1.0.1" : "0712A2A1FBF1AB594DD2247C102E6BD6"
     },
     "details" : {
@@ -361,7 +361,30 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ITEM_TREE",
                   "nodeId" : "at0001.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0009.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "defaultValue" : {
+                            "value" : 0,
+                            "@type" : "DV_ORDINAL"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -599,7 +622,8 @@
       },
       "termBindings" : {
         "SNOMED-CT" : {
-          "at0021.1" : "term:SNOMED-CT::249227004"
+          "at0021.1" : "term:SNOMED-CT::249227004",
+          "at0009.1" : "term:SNOMED-CT::249224006"
         }
       },
       "terminologyExtracts" : { },
